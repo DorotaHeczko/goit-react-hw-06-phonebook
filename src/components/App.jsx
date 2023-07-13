@@ -6,9 +6,14 @@ import { ContactList } from "./ContactList/ContactList";
 import css from "./App.module.css";
 
 export const App = () => {
-  const [contacts, setContacts] = useState(
-    () => JSON.parse(localStorage.getItem("state")) || []
-  );
+
+  
+ const [contacts, setContacts] = useState(() => {
+   const storedContacts = JSON.parse(localStorage.getItem("state"));
+   return Array.isArray(storedContacts) ? storedContacts : [];
+ });
+
+
   const [filter, setFilter] = useState("");
 
   useEffect(() => {

@@ -9,12 +9,13 @@ export class ContactList extends Component {
     this.props.onClick(value);
   };
 
+
   render() {
     const { contacts } = this.props;
 
     return (
       <ul className={css.listItem}>
-        {contacts.map(contact => {
+        {contacts.map((contact) => {
           return (
             <li key={contact.id} className={css.listBox}>
               {contact.name}: {contact.number}

@@ -16,7 +16,7 @@
   padding-left: 15px;
   border-radius: 15px;
   font-size: 18px;
-  box-shadow: 4px 4px 10px 3px rgba(224, 117, 53, 1);
+  box-shadow: 4px 4px 10px 3px rgb(226, 121, 186);
   border: none;
 }
 
@@ -26,8 +26,8 @@
 }
 
 .btn {
-  background-color: rgb(239, 162, 118);
-  box-shadow: 2px 2px 10px 3px rgba(224, 117, 53, 1);
+  background-color: rgb(226, 121, 186);
+  box-shadow: 2px 2px 10px 3pxrgb(226, 121, 186);
   border: none;
   padding: 15px;
   border-radius: 15px;
